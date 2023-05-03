@@ -1,0 +1,357 @@
+1)   Используйте команды операционной системы Linux и создайте две новых директории – «Игрушки для школьников» и «Игрушки для дошколят»
+
+
+alexandr@alexandr-VirtualBox:~/shop$ mkdir Игрушки_для_школьников Игрушки_для_дошколят
+
+alexandr@alexandr-VirtualBox:~/shop$ ll
+
+итого 16
+
+drwxrwxr-x  4 alexandr alexandr 4096 мая  1 16:13 ./
+
+drwxr-x--- 18 alexandr alexandr 4096 мая  1 16:10 ../
+
+drwxrwxr-x  2 alexandr alexandr 4096 мая  1 16:13 Игрушки_для_дошколят/
+
+drwxrwxr-x  2 alexandr alexandr 4096 мая  1 16:13 Игрушки_для_школьников/
+
+
+
+
+
+
+
+2)   Создайте в директории «Игрушки для школьников» текстовые файлы - «Роботы», «Конструктор», «Настольные игры»
+
+
+alexandr@alexandr-VirtualBox:~/shop$ cd Игрушки_для_школьников/
+
+alexandr@alexandr-VirtualBox:~/shop/Игрушки_для_школьников$ nano Роботы
+
+alexandr@alexandr-VirtualBox:~/shop/Игрушки_для_школьников$ nano Конструктор
+
+alexandr@alexandr-VirtualBox:~/shop/Игрушки_для_школьников$ nano Настольные_игры
+
+alexandr@alexandr-VirtualBox:~/shop/Игрушки_для_школьников$ ll
+
+итого 8
+
+drwxrwxr-x 2 alexandr alexandr 4096 мая  1 16:16 ./
+
+drwxrwxr-x 4 alexandr alexandr 4096 мая  1 16:13 ../
+
+-rw-rw-r-- 1 alexandr alexandr    0 мая  1 16:15 Конструктор
+
+-rw-rw-r-- 1 alexandr alexandr    0 мая  1 16:16 Настольные_игры
+
+-rw-rw-r-- 1 alexandr alexandr    0 мая  1 16:15 Роботы
+
+alexandr@alexandr-VirtualBox:~/shop/Игрушки_для_школьников$ cd ..
+
+
+
+
+
+
+
+3)    Создайте в директории «Игрушки для дошколят» текстовые файлы «Мягкие игрушки», «Куклы», «Машинки»
+
+
+alexandr@alexandr-VirtualBox:~/shop$ cd Игрушки_для_дошколят/
+
+alexandr@alexandr-VirtualBox:~/shop/Игрушки_для_дошколят$ nano Мягкие_игрушки
+
+alexandr@alexandr-VirtualBox:~/shop/Игрушки_для_дошколят$ nano Куклы
+
+alexandr@alexandr-VirtualBox:~/shop/Игрушки_для_дошколят$ nano Машинки
+
+alexandr@alexandr-VirtualBox:~/shop/Игрушки_для_дошколят$ ll
+
+итого 8
+
+drwxrwxr-x 2 alexandr alexandr 4096 мая  1 16:18 ./
+
+drwxrwxr-x 4 alexandr alexandr 4096 мая  1 16:13 ../
+
+-rw-rw-r-- 1 alexandr alexandr    0 мая  1 16:18 Куклы
+
+-rw-rw-r-- 1 alexandr alexandr    0 мая  1 16:18 Машинки
+
+-rw-rw-r-- 1 alexandr alexandr    0 мая  1 16:17 Мягкие_игрушки
+
+alexandr@alexandr-VirtualBox:~/shop/Игрушки_для_дошколят$ cd ..
+
+alexandr@alexandr-VirtualBox:~/shop$ ll
+
+итого 16
+
+drwxrwxr-x  4 alexandr alexandr 4096 мая  1 16:13 ./
+
+drwxr-x--- 18 alexandr alexandr 4096 мая  1 16:10 ../
+
+drwxrwxr-x  2 alexandr alexandr 4096 мая  1 16:18 Игрушки_для_дошколят/
+
+drwxrwxr-x  2 alexandr alexandr 4096 мая  1 16:16 Игрушки_для_школьников/
+
+
+
+
+
+
+
+4)   Объединить 2 директории в одну «Имя Игрушки»
+
+alexandr@alexandr-VirtualBox:~/shop$ mkdir Имя_Игрушки
+
+alexandr@alexandr-VirtualBox:~/shop$ mv Игрушки_для_школьников/ Имя_Игрушки/
+
+alexandr@alexandr-VirtualBox:~/shop$ mv Игрушки_для_дошколят/ Имя_Игрушки/
+
+alexandr@alexandr-VirtualBox:~/shop$ cd Имя_Игрушки/
+
+alexandr@alexandr-VirtualBox:~/shop/Имя_Игрушки$ ll
+
+итого 16
+
+drwxrwxr-x 4 alexandr alexandr 4096 мая  1 16:33 ./
+
+drwxrwxr-x 3 alexandr alexandr 4096 мая  1 16:33 ../
+
+drwxrwxr-x 2 alexandr alexandr 4096 мая  1 16:18 Игрушки_для_дошколят/
+
+drwxrwxr-x 2 alexandr alexandr 4096 мая  1 16:16 Игрушки_для_школьников/
+
+alexandr@alexandr-VirtualBox:~/shop/Имя_Игрушки$ cd ..
+
+alexandr@alexandr-VirtualBox:~/shop$ ll
+
+итого 12
+
+drwxrwxr-x  3 alexandr alexandr 4096 мая  1 16:33 ./
+
+drwxr-x--- 18 alexandr alexandr 4096 мая  1 16:10 ../
+
+drwxrwxr-x  4 alexandr alexandr 4096 мая  1 16:33 Имя_Игрушки/
+
+
+
+
+
+5)   Переименовать директорию «Имя Игрушки» в «Игрушки»
+
+alexandr@alexandr-VirtualBox:~/shop$ mv Имя_Игрушки/ Игрушки
+
+alexandr@alexandr-VirtualBox:~/shop$ ll
+
+итого 12
+
+drwxrwxr-x  3 alexandr alexandr 4096 мая  1 16:36 ./
+
+drwxr-x--- 18 alexandr alexandr 4096 мая  1 16:10 ../
+
+drwxrwxr-x  4 alexandr alexandr 4096 мая  1 16:33 Игрушки/
+
+
+
+
+
+6)   Просмотреть содержимое каталога «Игрушки».
+
+alexandr@alexandr-VirtualBox:~/shop$ cd Игрушки/
+
+alexandr@alexandr-VirtualBox:~/shop/Игрушки$ cd Игрушки_для_школьников/
+
+alexandr@alexandr-VirtualBox:~/shop/Игрушки/Игрушки_для_школьников$ ll
+
+итого 8
+
+drwxrwxr-x 2 alexandr alexandr 4096 мая  1 16:16 ./
+
+drwxrwxr-x 4 alexandr alexandr 4096 мая  1 16:33 ../
+
+-rw-rw-r-- 1 alexandr alexandr    0 мая  1 16:15 Конструктор
+
+-rw-rw-r-- 1 alexandr alexandr    0 мая  1 16:16 Настольные_игры
+
+-rw-rw-r-- 1 alexandr alexandr    0 мая  1 16:15 Роботы
+
+alexandr@alexandr-VirtualBox:~/shop/Игрушки/Игрушки_для_школьников$ cd ..
+
+alexandr@alexandr-VirtualBox:~/shop/Игрушки$ cd Игрушки_для_дошколят/
+
+alexandr@alexandr-VirtualBox:~/shop/Игрушки/Игрушки_для_дошколят$ ll
+
+итого 8
+
+drwxrwxr-x 2 alexandr alexandr 4096 мая  1 16:18 ./
+
+drwxrwxr-x 4 alexandr alexandr 4096 мая  1 16:33 ../
+
+-rw-rw-r-- 1 alexandr alexandr    0 мая  1 16:18 Куклы
+
+-rw-rw-r-- 1 alexandr alexandr    0 мая  1 16:18 Машинки
+
+-rw-rw-r-- 1 alexandr alexandr    0 мая  1 16:17 Мягкие_игрушки
+
+alexandr@alexandr-VirtualBox:~/shop/Игрушки/Игрушки_для_дошколят$ cd ../..
+
+
+
+
+
+7)   Установить и удалить snap-пакет. (Любой, какой хотите)
+
+alexandr@alexandr-VirtualBox:~$ snap search VLC
+
+Название         Версия                  Издатель    Примечание  Описание
+
+vlc              3.0.18                  videolan✓   -           The ultimate media player
+
+mjpg-streamer    2.0                     ogra        -           UVC webcam streaming tool
+
+audio-recorder   3.0.5+rev1432+pkg-7b07  brlin       -           A free audio-recorder for Linux (EXTREMELY BUGGY)
+
+orion-desktop    1.0.4                   keshavnrj✪  -           Complete torrent client and streamer for Linux Desktop
+
+gridplayer       0.4.3                   vzhd1701    -           Play multiple videos side-by-side
+
+kycli            0+git.9591d6e           dvlc        -           The command line interface to the unofficialKYC platform.
+
+peerflix         v0.39.0+git1.df28e20    pmagill     -           Streaming torrent client for Node.js
+
+test-streamlink  1.4.1-64-g599f362e      addq1eax    -           test-Streamlink
+
+alexandr@alexandr-VirtualBox:~$ snap list
+
+Название                   Версия            Правка  Канал            Издатель    Примечание
+
+bare                       1.0               5       latest/stable    canonical✓  base
+
+core                       16-2.58.3         14946   latest/stable    canonical✓  core
+
+core20                     20230308          1852    latest/stable    canonical✓  base
+
+core22                     20230325          607     latest/stable    canonical✓  base
+
+firefox                    112.0.2-1         2605    latest/stable/…  mozilla✓    -
+
+gnome-3-38-2004            0+git.6f39565     137     latest/stable/…  canonical✓  -
+
+gnome-42-2204              0+git.e7d97c7     87      latest/stable    canonical✓  -
+
+gtk-common-themes          0.1-81-g442e511   1535    latest/stable/…  canonical✓  -
+
+gtk2-common-themes         0.1               13      latest/stable    canonical✓  -
+
+snap-store                 41.3-66-gfe1e325  638     latest/stable/…  canonical✓  -
+
+snapd                      2.59.1            18933   latest/stable    canonical✓  snapd
+
+snapd-desktop-integration  0.1               57      latest/stable/…  canonical✓  -
+
+alexandr@alexandr-VirtualBox:~$ sudo snap install vlc
+
+vlc 3.0.18 от VideoLAN✓ установлен
+
+alexandr@alexandr-VirtualBox:~$ snap list
+
+Название                   Версия            Правка  Канал            Издатель    Примечание
+
+bare                       1.0               5       latest/stable    canonical✓  base
+
+core                       16-2.58.3         14946   latest/stable    canonical✓  core
+
+core18                     20230320          2721    latest/stable    canonical✓  base
+
+core20                     20230308          1852    latest/stable    canonical✓  base
+
+core22                     20230325          607     latest/stable    canonical✓  base
+
+firefox                    112.0.2-1         2605    latest/stable/…  mozilla✓    -
+
+gnome-3-38-2004            0+git.6f39565     137     latest/stable/…  canonical✓  -
+
+gnome-42-2204              0+git.e7d97c7     87      latest/stable    canonical✓  -
+
+gtk-common-themes          0.1-81-g442e511   1535    latest/stable/…  canonical✓  -
+
+gtk2-common-themes         0.1               13      latest/stable    canonical✓  -
+
+snap-store                 41.3-66-gfe1e325  638     latest/stable/…  canonical✓  -
+
+snapd                      2.59.1            18933   latest/stable    canonical✓  snapd
+
+snapd-desktop-integration  0.1               57      latest/stable/…  canonical✓  -
+
+vlc                        3.0.18            3078    latest/stable    videolan✓   -
+
+alexandr@alexandr-VirtualBox:~$ sudo snap remove vlc
+
+vlc удалён
+
+alexandr@alexandr-VirtualBox:~$ snap list
+
+Название                   Версия            Правка  Канал            Издатель    Примечание
+
+bare                       1.0               5       latest/stable    canonical✓  base
+
+core                       16-2.58.3         14946   latest/stable    canonical✓  core
+
+core18                     20230320          2721    latest/stable    canonical✓  base
+
+core20                     20230308          1852    latest/stable    canonical✓  base
+
+core22                     20230325          607     latest/stable    canonical✓  base
+
+firefox                    112.0.2-1         2605    latest/stable/…  mozilla✓    -
+
+gnome-3-38-2004            0+git.6f39565     137     latest/stable/…  canonical✓  -
+
+gnome-42-2204              0+git.e7d97c7     87      latest/stable    canonical✓  -
+
+gtk-common-themes          0.1-81-g442e511   1535    latest/stable/…  canonical✓  -
+
+gtk2-common-themes         0.1               13      latest/stable    canonical✓  -
+
+snap-store                 41.3-66-gfe1e325  638     latest/stable/…  canonical✓  -
+
+snapd                      2.59.1            18933   latest/stable    canonical✓  snapd
+
+snapd-desktop-integration  0.1               57      latest/stable/…  canonical✓  -
+
+alexandr@alexandr-VirtualBox:~$ 
+
+
+
+
+
+8)   Добавить произвольную задачу для выполнения каждые 3 минуты 
+(Например, запись в текстовый файл чего-то или копирование из каталога А в каталог Б).
+
+
+alexandr@alexandr-VirtualBox:~$ crontab -e
+
+crontab: installing new crontab
+
+alexandr@alexandr-VirtualBox:~$ crontab -l
+
+
+
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+
+# 
+
+# For more information see the manual pages of crontab(5) and cron(8)
+
+# 
+
+# m h  dom mon dow   command
+
+*0/3 * * * * /home/alexandr/check-disk-space
+
+alexandr@alexandr-VirtualBox:~$ 
+
+
+
+
+
